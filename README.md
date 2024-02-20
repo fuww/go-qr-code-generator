@@ -36,6 +36,8 @@ Put a list of urls in example.txt. Make sure there is a newline at the end.
 
 ## Deploy to Google Cloud Run
 
+This will deploy the source code, but still creates a container from it using Buildkit. 
+
 ```sh
 gcloud config set project PROJECT_ID
 gcloud run deploy --region=europe-west1 --allow-unauthenticated
